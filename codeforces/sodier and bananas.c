@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
     int k=0,n=0,w=0;
