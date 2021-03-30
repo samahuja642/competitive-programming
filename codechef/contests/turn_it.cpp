@@ -9,12 +9,9 @@ int main()
         cin>>u>>v>>a>>s;
         int final=v*v;
         int initial=u*u;
-        if(final>=initial-2*(a*s)){
-            cout<<"Yes"<<endl;
-        }
-        else{
-            cout<<"No"<<endl;
-        }
+        if(final>=initial-2*(a*s))cout<<"Yes"<<endl;
+        else
+        cout<<"No"<<endl;
     }
     return 0;
 }
