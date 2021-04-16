@@ -26,12 +26,11 @@ public:
         int numerals=0;
         for(int i=0;i<s.length();i++){
             int a=value(s[i]),b;
-            if((i+1)>=(s.length()-1)){
+            if(i<=(s.length()-1)){
                 b=value(s[i+1]);
             if(a<b){
-                numerals+=b-a;
+                numerals+=(b-a);
                 i++;
-                continue;
             }
             else{
                 numerals+=a;
@@ -47,7 +46,7 @@ public:
 int main()
 {
     Solution ob;
-    int k=ob.romanToInt("MCMXCIV");
+    int k=ob.romanToInt("MCMV");
     cout<<k;
     return 0;
 }
