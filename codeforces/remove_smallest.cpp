@@ -1,22 +1,32 @@
-#include<iostream>
-#include<bits/stdc++.h>
+#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int t;
-    cin>>t;
-    while(t--){
+    cin >> t;
+    while (t--)
+    {
         int n;
-        cin>>n;
+        cin >> n;
         int a[n];
-        for(int i=0;i<n;i++){
-            cin>>a[i];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
         }
-        sort(a,a+n);
-        if((a[n-1]-a[0])<=1){
-            cout<<"YES"<<endl;
+        sort(a, a + n);
+        for (int i = 0; i < n - 1; i++)
+        {
+            int diff = a[i + 1] - a[i];
+            if (diff > 1)
+            {
+                cout << "NO" << endl;
+                goto label;
+            }
         }
-        else cout<<"NO"<<endl;
+        cout << "YES" << endl;
+    label:
+    continue;
     }
     return 0;
 }

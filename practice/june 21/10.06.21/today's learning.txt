@@ -1,0 +1,33 @@
+important concept :-
+1.
+
+(a+b) = (a^b) + (a&b)
+question based on this approach is this "equal sum xor.cpp"
+
+2. 
+on subtracting 1 from number the LSB will get flipped.
+
+Brian Kernighan's algorithm.........
+    1. Initialize count=0
+    2. If integer n is not zero 
+        (a) Do bitwise & with (n-1) and assign the value back to n n=(n)&(n-1)
+        (b) Increament count by 1.
+        (c) goto step 2.
+    3. Else return count.
+
+3.
+
+we are having a built in function to count to the set bits of an integer it only one input that is unsigned integer
+function is _builtin_popcount(unigned int n) , here n is parameter which we need to pass to get count of set bits in n.
+
+4.
+
+To take out all even digits from any number do bitwise and with 0xAAAA.
+    1010 & 0101 => 0000
+To take out all odd digits from any number do bitwise and with 0x5555.
+    101 & 101 => 0101
+To exchange posititions left shift even one and right shift odd one.
+
+5.
+
+Magic numbers are those numbers which can be written as sum of unique powers of 5.

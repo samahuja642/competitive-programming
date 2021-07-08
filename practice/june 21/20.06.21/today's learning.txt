@@ -1,0 +1,21 @@
+algos stl
+* means returns iterator or address
+*min_element(starting,ending)
+*max_element(starting,ending)
+accumulate(starting,ending,intial_sum)
+count(starting,ending,what_to_count_value)
+*find(starting,ending,value)
+reverse(starting,ending)
+lambda functions
+    [](int x){return x+2;}(2);
+    defining a function can be done in main also using lambda functions like given below
+    int sum=[](int x){return x+2;}(2);
+    then you can call it by sum(4);
+stack template
+    stack.push(value);
+    stack.top();
+    stack.pop();
+queue template
+    queue.push(value);
+    queue.front();
+    queue.pop();
