@@ -9,26 +9,25 @@ int main(){
     string a;
     cin>>a;
     for(int i=0;i<a.length();i++){
-        total[a[i]]++;
+        total[a[i]]+=1;
     }
     string b;
     cin>>b;
     for(int i=0;i<b.length();i++){
-        total[b[i]]++;
+        total[b[i]]+=1;
     }
     map<char,int>neu;
     string temp;
     cin>>temp;
     for(int i=0;i<temp.length();i++){
-        neu[temp[i]]++;
+        neu[temp[i]]+=1;
     }
-    bool correct=true;
+    bool correct = true;
     for(int i=0;i<26;i++){
-        // if(total[char('a'+i)]!=neu[char('a'+i)]){
-        //     correct = false;
-        //     break;
-        // }
-        cout<<total[char('a'+i)]<<" "<<neu[char('a'+i)]<<endl;
+        if(total[char('A'+i)]!=neu[char('A'+i)]){
+            correct = false;
+            break;
+        }
     }
     if(correct==false){
         cout<<"NO"<<endl;
